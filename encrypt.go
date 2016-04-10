@@ -6,6 +6,10 @@ import (
 	"os/exec"
 )
 
+func main() {
+	HashIt(readFromUser())
+}
+
 // HashIt This funcion hash the string given
 // and send it directly to the clipboard
 func HashIt(text string) {
