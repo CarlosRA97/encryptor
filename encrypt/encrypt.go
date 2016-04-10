@@ -8,7 +8,7 @@ import (
 
 // HashIt This funcion hash the string given
 // and send it directly to the clipboard
-func HashIt(text string) {
+func HashIt(text string) string {
 	data := []byte(text)
 	hash := fmt.Sprintf("%x\n", sha1.Sum(data))
 	// fmt.Println(hash)
