@@ -3,6 +3,7 @@ package main
 import (
 	// "github.com/mattn/go-gtk/gdkpixbuf"
 	"./encrypt"
+	"fmt"
 	"github.com/mattn/go-gtk/glib"
 	"github.com/mattn/go-gtk/gtk"
 	"os"
@@ -104,8 +105,8 @@ func main() {
 	entry := gtk.NewEntry()
 	entry.SetText("Hello world")
 	framebox1.Add(entry)
-	data := entry.GetText()
-	HashIt(data)
+	data := encrypt.HashIt(entry.GetText())
+	fmt.Println(data)
 
 	image := gtk.NewImageFromFile(imagefile)
 	framebox1.Add(image)

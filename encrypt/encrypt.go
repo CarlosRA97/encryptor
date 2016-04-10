@@ -6,17 +6,14 @@ import (
 	"os/exec"
 )
 
-func main() {
-	HashIt(readFromUser())
-}
-
 // HashIt This funcion hash the string given
 // and send it directly to the clipboard
 func HashIt(text string) {
 	data := []byte(text)
 	hash := fmt.Sprintf("%x\n", sha1.Sum(data))
-	fmt.Println(hash)
-	clipboardIt(hash)
+	// fmt.Println(hash)
+	// clipboardIt(hash)
+	return hash
 }
 
 func readFromUser() string {
@@ -31,7 +28,7 @@ func readFromUser() string {
 func clipboardIt(data string) {
 	// commands := [4]string{"echo ", data, " | ", "pbcopy"}
 	// fmt.Println(co)
-	command := fmt.Sprintf("echo %s | pbcopy", data)
+	command := fmt.Sprintf("echo '%s' | pbcopy", data)
 	fmt.Println(command)
 	exec.Command(command).Start()
 }
