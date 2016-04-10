@@ -2,7 +2,7 @@ package main
 
 import (
 	// "github.com/mattn/go-gtk/gdkpixbuf"
-	// "github.com/carlosra97/encryptor/encrypt"
+	// "./encrypt"
 	"github.com/mattn/go-gtk/glib"
 	"github.com/mattn/go-gtk/gtk"
 	"os"
