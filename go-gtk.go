@@ -1,8 +1,8 @@
-package main
+package gtk
 
 import (
 	// "github.com/mattn/go-gtk/gdkpixbuf"
-	// "./encrypt"
+	"./encrypt"
 	"github.com/mattn/go-gtk/glib"
 	"github.com/mattn/go-gtk/gtk"
 	"os"
