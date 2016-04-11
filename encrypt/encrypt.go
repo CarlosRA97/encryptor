@@ -5,11 +5,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	const question = "Write what you want to hash:"
-	HashIt(readFromUser(question))
-}
-
 // HashIt This funcion hash the string given
 // and send it directly to the clipboard
 func HashIt(text string) string {
