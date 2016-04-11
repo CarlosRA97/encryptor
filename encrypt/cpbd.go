@@ -1,8 +1,8 @@
 package encrypt
 
 import (
-	"./sh"
 	"fmt"
+	"./sh"
 )
 
 // ClipboardIt Copy the data given to the clipboard by shell
